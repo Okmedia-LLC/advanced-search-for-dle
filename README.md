@@ -46,6 +46,7 @@ fetch(apiUrl, {
     },
     body: JSON.stringify(params)
 })
+```
 
 ## Installation
 
