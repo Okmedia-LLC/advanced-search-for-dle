@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Advanced Search </title>
+    </head>
+    <body>
+
+        <div id="content-is-here"> </div>
+
+        <script>
+
+            const availableParams = {
+                'keyword': {
+                    "valueType": "string",
+                    "example": "example",
+                    "default": "all"
+                },
+                'searchin': {
+                    "valueType": "string",
+                    "availableValues": ["all", "title", "shortcontent", "fullcontent"],
+                    "example": "all",
+                    "default": "all"
+                },
+                'categories': {
+                    valueType: "array",
+                    example: [1, 5, 2],
+                    default: "all"
+                },
+                'sort': {
+                    valueType: "string",
+                    availableValues: ["title", "relasedate", "shortcontent"],
+                    example: "title",
+                    default: null
+                },
+                'order': {
+                    valueType: "string",
+                    availableValues: ["asc", "desc"],
+                    example: "asc",
+                    default: "asc"
+                },
+                'relasedate': {
+                    valueType: "string",
+                    example: "2024-10-01",
+                    default: "all"
+                },
+                'relasedateDir': {
+                    valueType: "string",
+                    availableValues: ["up", "down"],
+                    default: null
+                }
+            };
+
+            const apiUrl = 'https://dle17default.81.whm.az/engine/ajax/advancedsearch.php';
+            const params = {
+                "category": [1]
+            };
+            
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Api-Key': 'T8I7-DRrY-TYGg-Y8OF-uVK',
+                    'Content-Type': 'application/json'
+                },
+                redirect: 'follow',
+                body: JSON.stringify(params)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('API request failed');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Search Results:', data);
+            })
+            .catch(error => console.error('Error:', error));
+
+        </script>
+        
+    </body>
+</html>
