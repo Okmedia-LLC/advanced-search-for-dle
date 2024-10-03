@@ -34,36 +34,30 @@ include_once(ENGINE_DIR . '/data/dbconfig.php');
 include_once(ENGINE_DIR . "/modules/advancedsearch/functions.advancedsearch.php");
 
 $headers = apache_request_headers();
-
-if (!isset($headers['Api-Key']) || $headers['Api-Key'] !== getSecretKey()) {
-    header('HTTP/1.1 403 Forbidden');
+if (($headers['Api-Key'] ?? '') !== getSecretKey()) {
+    http_response_code(403);
     die(json_encode(['error' => 'Invalid API Key']));
 }
 
 $inputData = json_decode(file_get_contents('php://input'), true);
 
-$keyword = isset($inputData['keyword']) ? htmlspecialchars($inputData['keyword']) : '';
-
-if (isset($inputData['keyword']) && (strlen($keyword) < 1 || strlen($keyword) > 45)) {
-    echo json_encode(['error' => '"keyword" must be between 1 and 45 characters.']);
-    exit;
+$keyword = htmlspecialchars($inputData['keyword'] ?? '');
+if (strlen($keyword) > 45) {
+    die(json_encode(['error' => '"keyword" must be between 1 and 45 characters.']));
 }
 
-$searchin = isset($inputData['searchin']) ? htmlspecialchars($inputData['searchin']) : 'all';
 $validSearchin = ['all', 'title', 'shortcontent', 'fullcontent'];
+$searchin = $inputData['searchin'] ?? 'all';
 
-if (!in_array($searchin, $validSearchin)) {
+if (!isset($validSearchin[$searchin]) && !in_array($searchin, $validSearchin)) {
     echo json_encode(['error' => 'Invalid "searchin" value. Accepted values: ' . implode(', ', $validSearchin) . '.']);
     exit;
 }
 
-$categories = isset($inputData['category']) ? $inputData['category'] : [];
-if (!empty($categories)) {
-    foreach ($categories as $category) {
-        if (!categoryExists($category) || !categoryHasPosts($category)) {
-            echo json_encode(['error' => 'Invalid or blank category: ' . htmlspecialchars($category)]);
-            exit;
-        }
+$categories = $inputData['category'] ?? [];
+foreach ($categories as $category) {
+    if (!categoryExists($category) || !categoryHasPosts($category)) {
+        die(json_encode(['error' => 'Invalid or blank category: ' . htmlspecialchars($category)]));
     }
 }
 
@@ -74,11 +68,7 @@ if (!isset($validSort[$sort])) {
     exit;
 }
 
-$order = isset($inputData['order']) ? htmlspecialchars($inputData['order']) : 'asc';
-if (!in_array($order, ['asc', 'desc'])) {
-    echo json_encode(['error' => 'Invalid "order" value. Accepted: asc, desc.']);
-    exit;
-}
+$order = in_array($inputData['order'] ?? 'asc', ['asc', 'desc']) ? $inputData['order'] : 'asc';
 
 $relasedate = isset($inputData['relasedate']) ? htmlspecialchars($inputData['relasedate']) : 'all';
 if ($relasedate !== 'all' && strtotime($relasedate) > time()) {
@@ -86,9 +76,10 @@ if ($relasedate !== 'all' && strtotime($relasedate) > time()) {
     exit;
 }
 
-$relasedateDir = isset($inputData['relasedateDir']) ? htmlspecialchars($inputData['relasedateDir']) : '';
-if ($relasedateDir && !in_array($relasedateDir, ['up', 'down'])) {
-    echo json_encode(['error' => 'Invalid "relasedateDir" value. Accepted: up, down.']);
+$relasedateDir = htmlspecialchars($inputData['relasedateDir'] ?? '');
+$validDirs = ['up', 'down'];
+if ($relasedateDir && !in_array($relasedateDir, $validDirs)) {
+    echo json_encode(['error' => 'Invalid "relasedateDir" value. Accepted: ' . implode(', ', $validDirs) . '.']);
     exit;
 }
 
