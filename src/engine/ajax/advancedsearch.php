@@ -67,10 +67,10 @@ if (!empty($categories)) {
     }
 }
 
-$sort = isset($inputData['sort']) ? htmlspecialchars($inputData['sort']) : 'date';
-$validSort = ['title', 'relasedate', 'shortcontent'];
-if (isset($inputData['sort']) && !in_array($sort, $validSort)) {
-    echo json_encode(['error' => 'Invalid "sort" value. Accepted values: ' . implode(', ', $validSort) . '.']);
+$validSort = ['title' => 'title', 'relasedate' => 'date', 'shortcontent' => 'short_story'];
+$sort = $validSort[$inputData['sort'] ?? 'date'] ?? 'date';
+if (!isset($validSort[$sort])) {
+    echo json_encode(['error' => 'Invalid "sort" value. Accepted values: ' . implode(', ', array_keys($validSort)) . '.']);
     exit;
 }
 

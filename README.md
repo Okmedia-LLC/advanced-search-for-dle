@@ -18,7 +18,7 @@ The following parameters can be used when making a request to the API:
 |----------------|-----------|-------------------------------------------------------|-------------------|---------------|
 | `keyword`      | string    | N/A                                                   | `"example"`       | `"all"`       |
 | `searchin`     | string    | `"all"`, `"title"`, `"shortcontent"`, `"fullcontent"` | `"all"`           | `"all"`       |
-| `categories`   | array     | N/A                                                   | `[1, 5, 2]`       | `[]`          |
+| `category`     | array     | N/A                                                   | `[1, 5, 2]`       | `[]`          |
 | `sort`         | string    | `"title"`, `"relasedate"`, `"shortcontent"`           | `"title"`         | `null`        |
 | `order`        | string    | `"asc"`, `"desc"`                                     | `"asc"`           | `"asc"`       |
 | `relasedate`   | string    | N/A                                                   | `"2024-10-01"`    | `null`        |
@@ -31,7 +31,7 @@ Here’s an example of how to construct a request to the API using the provided 
 const params = {
     "keyword": "example",
     "searchin": "all",
-    "categories": [1, 5],
+    "category": [1, 5],
     "sort": "title",
     "order": "asc",
     "relasedate": "2024-10-01",
