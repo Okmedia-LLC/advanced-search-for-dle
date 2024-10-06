@@ -17,8 +17,7 @@ The following parameters can be used when making a request to the API:
 | Parameter          | Type                  | Available Values                                         | Example            | Default Value |
 |--------------------|-----------------------|----------------------------------------------------------|--------------------|---------------|
 | `keyword`          | array [string]        | N/A                                                      | `["keyword-1", "keyword-2"]` | `[]`          |
-| `searchin`         | string                | `"all"`, `"title"`, `"shortcontent"`, `"fullcontent"`,   | `"all"`            | `"all"`       |
-|                                              `"extrafields"`
+| `searchin`         | string                | `"all"`, `"title"`, `"shortcontent"`, `"fullcontent"`, `"extrafields"` | `"all"`            | `"all"`       |
 | `extrafields`      | array [object]        | N/A                                                      | `[{"key-1": "val-1"}, {"key-2": "val-2"}]` | `null`        |
 | `extrafieldMatch`  | string                | `"some"`, `"every"`                                      | `"every"`          | `"some"`      |
 | `category`         | array [numbers]       | N/A                                                      | `[1, 5, 2]`        | `[]`          |
