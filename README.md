@@ -1,7 +1,7 @@
 # Advanced Search Module
 
 ## Overview
-The Advanced Search Module is a custom module designed for DataLife Engine (DLE) CMS. This module provides an enhanced search functionality, allowing users to perform searches across various content fields and categories, with options for sorting and filtering results.
+The Advanced Search Module is a custom module designed for DataLife Engine (DLE) CMS. This module provides enhanced search functionality, allowing users to perform searches across various content fields and categories, with options for sorting and filtering results.
 
 ## Features
 - **Flexible Search Parameters:** Supports searching by keyword, category, and various content fields (title, short content, full content).
@@ -14,24 +14,33 @@ The Advanced Search Module is a custom module designed for DataLife Engine (DLE)
 ## API Parameters
 The following parameters can be used when making a request to the API:
 
-| Parameter      | Type      | Available Values                                      | Example           | Default Value |
-|----------------|-----------|-------------------------------------------------------|-------------------|---------------|
-| `keyword`      | string    | N/A                                                   | `"example"`       | `"all"`       |
-| `searchin`     | string    | `"all"`, `"title"`, `"shortcontent"`, `"fullcontent"` | `"all"`           | `"all"`       |
-| `category`     | array     | N/A                                                   | `[1, 5, 2]`       | `[]`          |
-| `sort`         | string    | `"title"`, `"relasedate"`, `"shortcontent"`           | `"title"`         | `null`        |
-| `order`        | string    | `"asc"`, `"desc"`                                     | `"asc"`           | `"asc"`       |
-| `relasedate`   | string    | N/A                                                   | `"2024-10-01"`    | `null`        |
-| `relasedateDir`| string    | `"up"`, `"down"`                                      | `"up"`            | `null`        |
+| Parameter          | Type                  | Available Values                                         | Example            | Default Value |
+|--------------------|-----------------------|----------------------------------------------------------|--------------------|---------------|
+| `keyword`          | array [string]        | N/A                                                      | `["keyword-1", "keyword-2"]` | `[]`          |
+| `searchin`         | string                | `"all"`, `"title"`, `"shortcontent"`, `"fullcontent"`,   | `"all"`            | `"all"`       |
+|                                              `"extrafields"`
+| `extrafields`      | array [object]        | N/A                                                      | `[{"key-1": "val-1"}, {"key-2": "val-2"}]` | `null`        |
+| `extrafieldMatch`  | string                | `"some"`, `"every"`                                      | `"every"`          | `"some"`      |
+| `category`         | array [numbers]       | N/A                                                      | `[1, 5, 2]`        | `[]`          |
+| `subcats`          | boolean               | `true`, `false`                                          | `true`             | `false`       |
+| `sort`             | string                | `"title"`, `"relasedate"`, `"shortcontent"`              | `"title"`          | `null`        |
+| `order`            | string                | `"asc"`, `"desc"`                                        | `"asc"`            | `"asc"`       |
+| `relasedate`       | string                | N/A                                                      | `"2024-10-01"`     | `"all"`       |
+| `relasedateDir`    | string                | `"up"`, `"down"`                                         | `"up"`             | `null`        |
 
 ### Example API Request
 Here’s an example of how to construct a request to the API using the provided parameters:
 
 ```javascript
+const apiUrl = 'https://domain_name.com/engine/ajax/advancedsearch.php';
+
 const params = {
-    "keyword": "example",
+    "keyword": ["keyword-1", "keyword-2"],
     "searchin": "all",
     "category": [1, 5],
+    "extrafields": [{"key-1": "val-1"}, {"key-2": "val-2"}],
+    "extrafieldMatch": "every",
+    "subcats": true,
     "sort": "title",
     "order": "asc",
     "relasedate": "2024-10-01",
@@ -46,6 +55,16 @@ fetch(apiUrl, {
     },
     body: JSON.stringify(params)
 })
+.then(response => {
+    if (!response.ok) {
+        throw new Error('API request failed');
+    }
+    return response.json();
+})
+.then(data => {
+    console.log('Search Results:', data);
+})
+.catch(error => console.error('Error:', error));
 ```
 
 ## Installation
@@ -69,15 +88,18 @@ fetch(apiUrl, {
    - The function for performing searches is accessible via an AJAX call to `advancedsearch.php` with the necessary parameters.
    - Example of a request payload:
      ```json
-     {
-       "keyword": "example",
-       "searchin": "all",
-       "category": [1],
-       "sort": "title",
-       "order": "asc",
-       "relasedate": "2024-10-01",
-       "relasedateDir": "up"
-     }
+      {
+        "keyword": ["keyword-1", "keyword-2"],
+        "searchin": "all",
+        "category": [1],
+        "extrafields": [{"key-1": "val-1"}, {"key-2": "val-2"}],
+        "extrafieldMatch": "every",
+        "subcats": true,
+        "sort": "title",
+        "order": "asc",
+        "relasedate": "2024-10-01",
+        "relasedateDir": "up"
+      }
      ```
 
 ## Requirements

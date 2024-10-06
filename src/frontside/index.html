@@ -13,20 +13,41 @@
 
             const availableParams = {
                 'keyword': {
-                    "valueType": "string",
-                    "example": "example",
-                    "default": "all"
+                    "valueType": "array [ string, string ]",
+                    "example": ["keyword-1", "keyword-2"],
+                    "default": ""
                 },
                 'searchin': {
                     "valueType": "string",
-                    "availableValues": ["all", "title", "shortcontent", "fullcontent"],
+                    "availableValues": ["all", "title", "shortcontent", "fullcontent", "extrafields"],
                     "example": "all",
                     "default": "all"
+                },
+                'extrafields': {
+                    valueType: "array [ object, object, object ]",
+                    example: [
+                        {"key-1": "val-1"},
+                        {"key-2": "val-2"},
+                        {"key-3": "val-3"}
+                    ],
+                    default: null
+                },
+                'extrafieldMatch': {
+                    valueType: "string",
+                    availableValues: ["some", "every"],
+                    example: "every",
+                    default: "some"
                 },
                 'category': {
                     valueType: "array",
                     example: [1, 5, 2],
                     default: "all"
+                },
+                'subcats': {
+                    valueType: "boolean",
+                    availableValues: [true, false],
+                    example: true,
+                    default: false
                 },
                 'sort': {
                     valueType: "string",
@@ -52,7 +73,7 @@
                 }
             };
 
-            const apiUrl = 'https://domainname.com/engine/ajax/advancedsearch.php';
+            const apiUrl = 'https://domain_name.com/engine/ajax/advancedsearch.php';
             const params = {
                 "category": [1]
             };

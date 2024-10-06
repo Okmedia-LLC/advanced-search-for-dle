@@ -31,6 +31,7 @@ if (!defined('DATALIFEENGINE')) {
 
 include_once(ENGINE_DIR . '/classes/mysql.php');
 include_once(ENGINE_DIR . '/data/dbconfig.php');
+include_once(ENGINE_DIR . '/data/config.php');
 include_once(ENGINE_DIR . "/modules/advancedsearch/functions.advancedsearch.php");
 
 $headers = apache_request_headers();
@@ -41,12 +42,25 @@ if (($headers['Api-Key'] ?? '') !== getSecretKey()) {
 
 $inputData = json_decode(file_get_contents('php://input'), true);
 
-$keyword = htmlspecialchars($inputData['keyword'] ?? '');
-if (strlen($keyword) > 45) {
-    die(json_encode(['error' => '"keyword" must be between 1 and 45 characters.']));
+$keywords = $inputData['keyword'] ?? [];
+
+if (!is_array($keywords) || count($keywords) === 0) {
+    die(json_encode(['error' => '"keyword" must be a non-empty array.']));
 }
 
-$validSearchin = ['all', 'title', 'shortcontent', 'fullcontent'];
+$keywords = array_map(function($keyword) {
+    $keyword = trim($keyword);
+    
+    if (strlen($keyword) === 0 || strlen($keyword) > 45) {
+        die(json_encode(['error' => 'Each "keyword" must be between 1 and 45 characters.']));
+    }
+    
+    return htmlspecialchars($keyword, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+}, $keywords);
+
+$regexPattern = implode('|', $keywords);
+
+$validSearchin = ['all', 'title', 'shortcontent', 'fullcontent', 'extrafields'];
 $searchin = $inputData['searchin'] ?? 'all';
 
 if (!isset($validSearchin[$searchin]) && !in_array($searchin, $validSearchin)) {
@@ -54,11 +68,44 @@ if (!isset($validSearchin[$searchin]) && !in_array($searchin, $validSearchin)) {
     exit;
 }
 
-$categories = $inputData['category'] ?? [];
-foreach ($categories as $category) {
-    if (!categoryExists($category) || !categoryHasPosts($category)) {
-        die(json_encode(['error' => 'Invalid or blank category: ' . htmlspecialchars($category)]));
+$extrafields = $inputData['extrafields'] ?? [];
+$extrafieldMatch = $inputData['extrafieldMatch'] ?? 'some';
+
+if ($searchin === 'extrafields') {
+    if (!is_array($extrafields) || count($extrafields) === 0) {
+        die(json_encode(['error' => '"extrafields" must be a non-empty array when "searchin" is "extrafields".']));
     }
+
+    foreach ($extrafields as $extrafield) {
+        if (!is_array($extrafield) || count($extrafield) !== 1) {
+            die(json_encode(['error' => 'Each "extrafield" must be an associative array with one key-value pair.']));
+        }
+    }
+}
+
+if (!in_array($extrafieldMatch, ['some', 'every'])) {
+    die(json_encode(['error' => '"extrafieldMatch" must be either "some" or "every".']));
+}
+
+$categories = $inputData['category'] ?? [];
+$validCategoryFound = false;
+
+foreach ($categories as $category) {
+    if (categoryExists($category) && categoryHasPosts($category)) {
+        $validCategoryFound = true;
+        break;
+    }
+}
+
+if (!$validCategoryFound) {
+    die(json_encode(['error' => 'Invalid or blank category.']));
+}
+
+$subcats = $inputData['subcats'] ?? false;
+
+if (!is_bool($subcats)) {
+    echo json_encode(['error' => '"subcats" must be a boolean value.']);
+    exit;
 }
 
 $validSort = ['title' => 'title', 'relasedate' => 'date', 'shortcontent' => 'short_story'];
@@ -83,17 +130,5 @@ if ($relasedateDir && !in_array($relasedateDir, $validDirs)) {
     exit;
 }
 
-// $responseData = [
-//     'keyword' => $keyword,
-//     'searchin' => $searchin,
-//     'categories' => $categories,
-//     'sort' => $sort,
-//     'order' => $order,
-//     'relasedate' => $relasedate,
-//     'relasedateDir' => $relasedateDir
-// ];
-
-// echo json_encode($responseData);
-
-$resultData = searchInDb($keyword, $searchin, $categories, $sort, $order, $relasedate, $relasedateDir);
+$resultData = searchInDb($regexPattern, $searchin, $extrafields, $extrafieldMatch, $categories, $subcats, $sort, $order, $relasedate, $relasedateDir);
 print_result($resultData);
