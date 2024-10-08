@@ -117,7 +117,7 @@ if (!isset($validSort[$sort])) {
 
 $order = in_array($inputData['order'] ?? 'asc', ['asc', 'desc']) ? $inputData['order'] : 'asc';
 
-$relasedate = isset($inputData['relasedate']) ? htmlspecialchars($inputData['relasedate']) : 'all';
+$relasedate = isset($inputData['relasedate']) ? htmlspecialchars($inputData['relasedate']) : '';
 if ($relasedate !== 'all' && strtotime($relasedate) > time()) {
     echo json_encode(['error' => 'A future date cannot be entered.']);
     exit;

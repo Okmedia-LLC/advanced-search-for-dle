@@ -81,10 +81,10 @@ function searchInDb(
 
         if ($subcats) {
             $childCategories = getChildCategories($categoriesList);
-            $categoriesList = implode(',', array_merge([$categoriesList], $childCategories));
+            $categoriesList = implode('|', array_merge([$categoriesList], $childCategories));
         }
         
-        $final_query .= " AND FIND_IN_SET(p.category, '$categoriesList')";
+        $final_query .= " AND p.category REGEXP '(^|,)($categoriesList)(,|$)'";
     }
 
     if (!empty($relasedate)) {
