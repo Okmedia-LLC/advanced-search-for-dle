@@ -35,7 +35,7 @@ include_once(ENGINE_DIR . '/data/config.php');
 include_once(ENGINE_DIR . "/modules/advancedsearch/functions.advancedsearch.php");
 
 $headers = apache_request_headers();
-if (($headers['Api-Key'] ?? '') !== getSecretKey()) {
+if (($headers['api-key'] ?? '') !== getSecretKey()) {
     http_response_code(403);
     die(json_encode(['error' => 'Invalid API Key']));
 }
@@ -109,7 +109,7 @@ if (!is_bool($subcats)) {
 }
 
 $validSort = ['title' => 'title', 'relasedate' => 'date', 'shortcontent' => 'short_story'];
-$sort = $validSort[$inputData['sort'] ?? 'date'] ?? 'date';
+$sort = $validSort[$inputData['sort'] ?? 'relasedate'] ?? 'date';
 if (!isset($validSort[$sort])) {
     echo json_encode(['error' => 'Invalid "sort" value. Accepted values: ' . implode(', ', array_keys($validSort)) . '.']);
     exit;
