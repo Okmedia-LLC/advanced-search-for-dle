@@ -12,6 +12,11 @@
         <script>
 
             const availableParams = {
+                'id': {
+                    "valueType": "integer",
+                    "example": 3,
+                    "default": -1 
+                },
                 'keyword': {
                     "valueType": "array [ string, string ]",
                     "example": ["keyword-1", "keyword-2"],
@@ -19,7 +24,7 @@
                 },
                 'searchin': {
                     "valueType": "string",
-                    "availableValues": ["all", "title", "shortcontent", "fullcontent", "extrafields"],
+                    "availableValues": ["all", "title", "shortcontent", "fullcontent"],
                     "example": "all",
                     "default": "all"
                 },
@@ -73,7 +78,7 @@
                 }
             };
 
-            const apiUrl = 'https://domain_name.com/engine/ajax/advancedsearch.php';
+            const apiUrl = 'https://domain_name.com/advancedsearch/index.php';
             const params = {
                 "category": [1]
             };
