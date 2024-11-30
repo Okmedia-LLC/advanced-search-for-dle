@@ -28,7 +28,7 @@ $version = [
 	'id'        => 'advancedsearch',
 ];
 
-require_once(ENGINE_DIR . "/modules/advancedsearch/functions.advancedsearch.php");
+require_once(ROOT_DIR . "/advancedsearch/modules/functions.advancedsearch.php");
 
 $advancedsearch = array();
 if (file_exists(ENGINE_DIR . '/data/' . $version['id'] . '.json'))

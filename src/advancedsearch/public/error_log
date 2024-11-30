@@ -1,0 +1,360 @@
+[23-Nov-2024 13:06:54 UTC] PHP Notice:  Undefined variable: inputData in /home/caspoytw/public_html/advancedsearch/public/index.php on line 20
+[23-Nov-2024 13:06:55 UTC] PHP Notice:  Undefined variable: inputData in /home/caspoytw/public_html/advancedsearch/public/index.php on line 20
+[23-Nov-2024 13:06:56 UTC] PHP Notice:  Undefined variable: inputData in /home/caspoytw/public_html/advancedsearch/public/index.php on line 20
+[23-Nov-2024 13:14:06 UTC] PHP Notice:  Undefined variable: _REQUESTS in /home/caspoytw/public_html/advancedsearch/public/index.php on line 20
+[23-Nov-2024 13:14:08 UTC] PHP Notice:  Undefined variable: _REQUESTS in /home/caspoytw/public_html/advancedsearch/public/index.php on line 20
+[23-Nov-2024 13:17:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(27): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:17:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(27): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:18:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(27): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:19:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(27): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:19:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(27): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:19:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(27): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:20:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(27): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:20:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(27): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:23:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(28): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:23:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(28): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:24:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(28): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:30:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(30): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:30:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function categoryExists() in /home/caspoytw/public_html/advancedsearch/modules/filters.php:53
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/filters_validation.php(30): {closure}(Array, NULL)
+#1 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(22): validateAndProcessFilters(Array, Array)
+#2 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#3 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#4 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/modules/filters.php on line 53
+[23-Nov-2024 13:59:14 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 13:59:19 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:00:57 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:01:57 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:07:18 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:08:39 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:14:49 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:15:48 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:16:25 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:18:02 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:20:21 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:20:23 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:22:45 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:22:48 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:23:40 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:24:26 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:24:28 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:25:16 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:27:01 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:28
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
+[23-Nov-2024 14:27:28 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:28
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
+[23-Nov-2024 14:27:30 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:28
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
+[23-Nov-2024 14:27:42 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:28
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
+[23-Nov-2024 14:27:57 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:28
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
+[23-Nov-2024 14:27:59 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:28
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
+[23-Nov-2024 14:28:42 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:31:00 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:31:01 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:31:02 UTC] PHP Fatal error:  Uncaught Error: Class 'SearchParamsBuilder' not found in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:24
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 24
+[23-Nov-2024 14:31:43 UTC] PHP Fatal error:  require_once(): Failed opening required 'AADVANCED_SERARCH_DIR/Builder/SearchParamsBuilder.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 16
+[23-Nov-2024 14:32:04 UTC] PHP Fatal error:  require_once(): Failed opening required 'AADVANCED_SERARCH_DIR/Builders/SearchParamsBuilder.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 16
+[23-Nov-2024 14:32:06 UTC] PHP Fatal error:  require_once(): Failed opening required 'AADVANCED_SERARCH_DIR/Builders/SearchParamsBuilder.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 16
+[23-Nov-2024 14:35:27 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to SearchParamsBuilder::setKeywords() must be of the type string, null given, called in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26 and defined in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php:18
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(26): SearchParamsBuilder->setKeywords(NULL)
+#1 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#2 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#3 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php on line 18
+[23-Nov-2024 14:35:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get() in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:26
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26
+[23-Nov-2024 14:35:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get() in /home/caspoytw/public_html/advancedsearch/advancedsearch.php:26
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once()
+#1 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#2 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26
+[23-Nov-2024 14:36:12 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to SearchParamsBuilder::setKeywords() must be of the type string, array given, called in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26 and defined in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php:18
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(26): SearchParamsBuilder->setKeywords(Array)
+#1 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#2 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#3 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php on line 18
+[23-Nov-2024 14:41:36 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
+[23-Nov-2024 14:41:40 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
+[23-Nov-2024 15:24:17 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
+[23-Nov-2024 15:24:19 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
+[23-Nov-2024 15:25:19 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to SearchParamsBuilder::setKeywords() must be of the type string, array given, called in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26 and defined in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php:18
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(26): SearchParamsBuilder->setKeywords(Array)
+#1 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#2 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#3 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php on line 18
+[23-Nov-2024 15:25:21 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to SearchParamsBuilder::setKeywords() must be of the type string, array given, called in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26 and defined in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php:18
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(26): SearchParamsBuilder->setKeywords(Array)
+#1 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#2 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#3 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php on line 18
+[23-Nov-2024 15:26:45 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to SearchParamsBuilder::setKeywords() must be of the type string, array given, called in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26 and defined in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php:18
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(26): SearchParamsBuilder->setKeywords(Array)
+#1 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#2 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#3 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php on line 18
+[23-Nov-2024 15:29:54 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to SearchParamsBuilder::setKeywords() must be of the type string, array given, called in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26 and defined in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php:18
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(26): SearchParamsBuilder->setKeywords(Array)
+#1 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#2 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#3 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php on line 18
+[23-Nov-2024 15:29:56 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to SearchParamsBuilder::setKeywords() must be of the type string, array given, called in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26 and defined in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php:18
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(26): SearchParamsBuilder->setKeywords(Array)
+#1 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#2 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#3 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php on line 18
+[23-Nov-2024 15:30:22 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to SearchParamsBuilder::setKeywords() must be of the type string, array given, called in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26 and defined in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php:18
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(26): SearchParamsBuilder->setKeywords(Array)
+#1 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#2 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#3 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php on line 18
+[23-Nov-2024 15:31:59 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to SearchParamsBuilder::setKeywords() must be of the type string, array given, called in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 26 and defined in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php:18
+Stack trace:
+#0 /home/caspoytw/public_html/advancedsearch/advancedsearch.php(26): SearchParamsBuilder->setKeywords(Array)
+#1 /home/caspoytw/public_html/advancedsearch/modules/init.php(34): require_once('/home/caspoytw/...')
+#2 /home/caspoytw/public_html/advancedsearch/public/index.php(20): require_once('/home/caspoytw/...')
+#3 {main}
+  thrown in /home/caspoytw/public_html/advancedsearch/Builders/SearchParamsBuilder.php on line 18
+[23-Nov-2024 15:34:15 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/caspoytw/public_html/advancedsearch/advancedsearch.php on line 28
