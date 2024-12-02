@@ -13,7 +13,7 @@
 
 $headers = apache_request_headers();
 
-if (($headers['api-key'] ?? '') !== getSecretKey()) {
+if ( !in_array(getSecretKey(), array_values($headers)) ) {
     http_response_code(403);
     die(json_encode(['error' => 'Invalid API Key']));
 }
