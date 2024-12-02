@@ -11,7 +11,7 @@
 =====================================================
 */
 
-define('SECRET_KEY_FILE', ADVANCED_SERARCH_DIR . "/data/advancedsearch.json");
+define('SECRET_KEY_FILE', ENGINE_DIR . "/data/advancedsearch.json");
 
 function getSecretKey(): string {
     $data = json_decode(file_get_contents(SECRET_KEY_FILE), true);
