@@ -370,6 +370,7 @@ function xfieldsdataload_advancedsearch($id) {
 		$xfielddataname = str_replace( "__NEWL__", "\r\n", $xfielddataname );
 		$xfielddatavalue = str_replace( "&#124;", "|", $xfielddatavalue );
 		$xfielddatavalue = str_replace( "__NEWL__", "\r\n", $xfielddatavalue );
+        $xfielddatavalue = stripslashes( $xfielddatavalue );
 		$data[$xfielddataname] = trim($xfielddatavalue);
 	}
 	
